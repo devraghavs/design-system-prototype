@@ -1,0 +1,87 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import { Icons } from '../Iconography/iconsEnum';
+import Modal from './Modal';
+
+<Meta title='XT-UI-Kit-Components/Modal' component={Modal} />
+
+export const Template = (args) => <Modal {...args} />;
+
+<Story
+  name='Modal'
+  args={{
+    ModalTitle: 'Modal title',
+    ModalContent:
+      'The error JSX element type does not have any construct or call signatures occurs when we try you would know the to pass an element or a react component to pass an element or a react component as props to another component but type the prop incorrectly.',
+    themedheading: true,
+    Iconmodal: false,
+    open: true,
+    crossIcon: true,
+    largeModal: false,
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name='Modal-large'
+  args={{
+    ModalTitle: <div>Modal title</div>,
+    ModalContent: (
+      <div>
+        The error JSX element type does not have any construct or call signatures occurs when we try
+        you would know the to pass an element or a react component to pass an element or a react
+        component as props to another component but type the prop incorrectly.pass an element or a
+        react component to pass an element or a react component as props to another component but
+        type the prop incorrectly.
+      </div>
+    ),
+    themedheading: true,
+    open: true,
+    crossIcon: true,
+    largeModal: true,
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name='Modal-sucess'
+  args={{
+    ButtonName: 'Sucess',
+    ModalContent: (
+      <p>
+        Thank you for conducting the inteview and submitting your feedback. You can either download
+        the probe form from the button below.
+      </p>
+    ),
+    Iconmodal: true,
+    icon: Icons.success,
+    open: true,
+    iconcolor: 'white',
+    size: '80',
+    crossIcon: false,
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name='Modal-warning'
+  args={{
+    ButtonName: 'warning',
+    ModalContent: (
+      <p>
+        Dropping a candidate means that the candidate is rejected and their application won't be
+        eligible for futher processing
+      </p>
+    ),
+    Iconmodal: true,
+    icon: Icons.alert,
+    iconcolor: 'white',
+    size: '80',
+    open: true,
+    crossIcon: false,
+  }}
+>
+  {Template.bind({})}
+</Story>

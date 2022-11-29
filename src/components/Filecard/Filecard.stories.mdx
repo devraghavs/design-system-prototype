@@ -1,0 +1,20 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Filecard from './Filecard';
+
+<Meta title='XT-UI-Kit-Components/Filecard' component={Filecard} />
+
+export const Template = (args) => <Filecard {...args} />;
+
+<Story
+  name='Filecard'
+  args={{
+    className: '',
+    fileName: 'filename.pdf',
+    fileSize: '38kb',
+    variant: 'uploading',
+    value: 50,
+    max: 100,
+  }}
+>
+  {Template.bind({})}
+</Story>

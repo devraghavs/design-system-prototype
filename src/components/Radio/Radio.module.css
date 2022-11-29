@@ -1,0 +1,16 @@
+.radioparent {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.Inputradio {
+  cursor: pointer;
+  accent-color: var(--xt_ui_kit_primary_color, #fe414d);
+}
+.labelradio {
+  cursor: pointer;
+}
+.Inputradio:disabled {
+  opacity: 30%;
+  cursor: not-allowed;
+}

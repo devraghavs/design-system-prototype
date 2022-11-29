@@ -1,0 +1,17 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Progressbar from './Progressbar';
+
+<Meta title='XT-UI-Kit-Components/Progressbar' component={Progressbar} />
+
+export const Template = (args) => <Progressbar {...args} />;
+
+<Story
+  name='Progressbar'
+  args={{
+    value: 0,
+    max: 100,
+    ariaLabel: 'progessbar',
+  }}
+>
+  {Template.bind({})}
+</Story>

@@ -1,0 +1,36 @@
+.default {
+  background-color: var(--xt_ui_kit_white_color, #ffffff);
+  color: var(--xt_ui_kit_secondary_color, #333333);
+  outline: none;
+  border: 1px solid var(--xt_ui_kit_disabled_color, #eeeeee);
+  border-radius: var(--xt_ui_kit_border_radius_5px, 5px);
+  font-size: var(----xt_ui_kit_values, 14px);
+  line-height: 22px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+  font-style: normal;
+  font-weight: var(--xt_ui_kit_regular, 400);
+  resize: none;
+}
+.default.resizeable {
+  resize: auto;
+}
+.textarea .default:focus {
+  border-color: var(--xt_ui_kit_voilet_color, #a290c9);
+}
+
+textarea::placeholder {
+  color: var(--xt_ui_kit_black_color, #000000);
+  font-size: var(--xt_ui_kit_values, 14px);
+  line-height: 22px;
+  font-style: normal;
+  font-weight: var(--xt_ui_kit_light, 300);
+  opacity: 0.5;
+}
+
+.textarea .default:disabled {
+  cursor: not-allowed;
+  background-color: var(--xt_ui_kit_disabled_color, #eeeeee);
+}

@@ -1,0 +1,55 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Input from './Input';
+
+<Meta title='XT-UI-Kit-Components/Input' component={Input} />
+
+export const Template = (args) => <Input {...args} />;
+
+<Story
+  name='text input'
+  args={{
+    placeholder: 'placeholder.....',
+    required: false,
+    disabled: false,
+    type: 'text',
+    label: 'Label',
+    required: false,
+    disabled: false,
+    error: '',
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name='number input'
+  args={{
+    placeholder: 'placeholder.....',
+    required: false,
+    disabled: false,
+    type: 'number',
+    label: 'Label',
+    required: false,
+    disabled: false,
+    error: '',
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name='search input'
+  args={{
+    placeholder: 'placeholder.....',
+    required: false,
+    searchIcon: true,
+    disabled: false,
+    type: 'search',
+    label: 'Label',
+    required: false,
+    disabled: false,
+    error: '',
+  }}
+>
+  {Template.bind({})}
+</Story>

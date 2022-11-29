@@ -1,0 +1,130 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Accordian from './Accordian.tsx';
+import Chips from '../Chips';
+import Input from '../Input';
+import Textarea from '../Textarea';
+import styles from '../Global.module.css';
+import { AcordianEnum } from './accordianEnum';
+
+<Meta title='XT-UI-Kit-Components/Accordian' component={Accordian} />
+
+export const Template = (args) => <Accordian {...args} />;
+
+<Story
+  name='Accordian Single'
+  args={{
+    defaultValue: 'item-3',
+    type: AcordianEnum.SINGLE,
+    data: [
+      {
+        value: 'item-1',
+        headerProps: (
+          <div className={styles.chipsParent}>
+            <span>What do you call a dog magician?</span>
+          </div>
+        ),
+        contentProps: 'This is for testing',
+        led: false,
+      },
+      {
+        value: 'item-2',
+        headerProps: 'What do you call a funny mountain?',
+        contentProps: 'This is for testing',
+        disabled: false,
+      },
+      {
+        value: 'item-3',
+        headerProps: 'What did the astronaut say ?',
+        contentProps: (
+          <>
+            <div className={styles.chipsParent}>
+              <Chips className={styles.chip} chipVariant='success' isRemoveable={false} />
+              <Chips className={styles.chip} chipVariant='danger' isRemoveable={false} />
+              <Chips className={styles.chip} chipVariant='info' isRemoveable={false} />
+              <Chips className={styles.chip} chipVariant='warning' isRemoveable={false} />
+              <Chips className={styles.chip} chipVariant='success' isRemoveable={false} />
+            </div>
+            <Input
+              wrapperClass={styles.accordianInput}
+              id='firstName'
+              name='FirstName'
+              label='First Name'
+              type='text'
+              placeholder='First Name'
+            />
+            <Input
+              wrapperClass={styles.accordianInput}
+              id='email'
+              name='email'
+              label='Email'
+              type='email'
+              placeholder='Email'
+              e
+            />
+          </>
+        ),
+        disabled: false,
+      },
+    ],
+  }}
+>
+  {Template.bind({})};
+</Story>
+
+<Story
+  name='Accordian Multiple'
+  args={{
+    defaultValue: ['item-2', 'item-3'],
+    datatestId: 'xt-ui-kit-accordian-component',
+    type: AcordianEnum.MULTIPLE,
+    data: [
+      {
+        value: 'item-1',
+        headerProps: 'What do you call a dog magician?',
+        contentProps: 'This is for testing',
+        disabled: true,
+      },
+      {
+        value: 'item-2',
+        headerProps: 'What do you call a funny mountain?',
+        contentProps: 'This is for testing',
+        disabled: false,
+      },
+      {
+        value: 'item-3',
+        headerProps: 'What did the astronaut say ?',
+        contentProps: (
+          <>
+            <div className={styles.chipsParent}>
+              <Chips className={styles.chip} chipVariant='success' isRemoveable={false} />
+              <Chips className={styles.chip} chipVariant='danger' isRemoveable={false} />
+              <Chips className={styles.chip} chipVariant='info' isRemoveable={false} />
+              <Chips className={styles.chip} chipVariant='warning' isRemoveable={false} />
+              <Chips className={styles.chip} chipVariant='success' isRemoveable={false} />
+            </div>
+            <Input
+              wrapperClass={styles.accordianInput}
+              id='firstName'
+              name='FirstName'
+              label='First Name'
+              type='text'
+              placeholder='First Name'
+            />
+            <Input
+              wrapperClass={styles.accordianInput}
+              id='email'
+              name='email'
+              label='Email'
+              type='email'
+              placeholder='Email'
+              e
+            />
+          </>
+        ),
+        disabled: false,
+      },
+    ],
+  }}
+>
+  {Template.bind({})};
+</Story>

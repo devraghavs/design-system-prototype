@@ -1,0 +1,27 @@
+.chipsParent {
+  display: flex;
+  flex-direction: row;
+}
+
+.chip {
+  line-height: 12px;
+  margin: 0px 10px;
+}
+
+.accordianInput {
+  margin-top: 20px;
+}
+
+.externalCss {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tooltip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 110px;
+}

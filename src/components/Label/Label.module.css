@@ -1,0 +1,17 @@
+.default {
+  font-style: normal;
+  font-weight: var(--xt_ui_kit_light, 300);
+  font-size: var(--xt_ui_kit_input_field_label, 12px);
+  line-height: 19px;
+  color: var(--xt_ui_kit_secondary_color, #333333);
+}
+
+.required::after {
+  content: '*';
+  margin-left: 2.5px;
+  color: var(--xt_ui_kit_primary_color, #fe414d);
+}
+
+.required {
+  font-weight: var(--xt_ui_kit_medium, 500);
+}

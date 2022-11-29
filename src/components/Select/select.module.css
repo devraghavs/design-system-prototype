@@ -1,0 +1,70 @@
+.selectOptions {
+  overflow: hidden;
+  width: 168px;
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 0px;
+  cursor: pointer;
+  box-shadow: var(--xt_ui_kit_box_shadow, 0px 2px 5px rgba(0, 0, 0, 0.1));
+}
+
+.selectButton {
+  display: inline-flex;
+  min-width: 12em;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--xt_ui_kit_values, 14px);
+  padding-left: 10px;
+  height: 35px;
+  cursor: pointer;
+  background-color: var(--xt_ui_kit_white_color, #ffffff);
+  color: var(--xt_ui_kit_secondary_color, #333333);
+  border: 1px solid var(--xt_ui_kit_disabled_color, #eeeeee);
+  box-shadow: var(--xt_ui_kit_box_shadow, 0px 2px 5px rgba(0, 0, 0, 0.1));
+}
+
+.unSelectedItem:hover {
+  background: var(--xt_ui_kit_bluishwhite_color, #f5faff);
+}
+
+.selectOptions .unSelectedItem {
+  font-size: var(--xt_ui_kit_values, 14px);
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding-left: 10px;
+  position: relative;
+  color: var(--xt_ui_kit_secondary_color, #333333);
+  border: 1px solid var(--xt_ui_kit_disabled_color, #eeeeee);
+}
+
+.selectOptions .selectedItem {
+  background: var(--xt_ui_kit_bluishwhite_color, #f5faff);
+  font-size: var(--xt_ui_kit_values, 14px);
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding-left: 10px;
+  position: relative;
+  border: 1px solid var(--xt_ui_kit_disabled_color, #eeeeee);
+}
+
+.checkIcon {
+  display: flex;
+  align-items: center;
+  margin: 0px 5px 0px 2px;
+}
+
+.LabelText {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+
+.disableOption {
+  opacity: 0.3;
+}
+
+.disableOption:hover {
+  cursor: not-allowed;
+}

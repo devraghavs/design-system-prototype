@@ -1,0 +1,31 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import NextandPreviousButton from './NextandPrevious';
+import { Icons } from '../Iconography/iconsEnum';
+
+<Meta title='XT-UI-Kit-Components/Button/PageButtons' component={NextandPreviousButton} />
+
+export const Template = (args) => <NextandPreviousButton {...args} />;
+
+<Story
+  name='Previous-Button'
+  args={{
+    disabled: false,
+    icon: Icons.left,
+    Iconcolor: 'white',
+    size: '17',
+  }}
+>
+  {Template.bind({})};
+</Story>
+
+<Story
+  name='Next-Button'
+  args={{
+    disabled: false,
+    icon: Icons.right,
+    Iconcolor: 'white',
+    size: '17',
+  }}
+>
+  {Template.bind({})};
+</Story>

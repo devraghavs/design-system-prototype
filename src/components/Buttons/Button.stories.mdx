@@ -1,0 +1,66 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Button from './Button';
+
+import { Icons } from '../Iconography/iconsEnum';
+
+<Meta title='XT-UI-Kit-Components/Button' component={Button} />
+
+export const Template = (args) => <Button {...args} />;
+
+<Story
+  name='Solid-Button'
+  args={{
+    children: 'Default',
+    variant: 'solid',
+    disabled: false,
+    size: 'medium',
+    type: 'button',
+    ariaLabel: 'solid button',
+  }}
+>
+  {Template.bind({})};
+</Story>
+
+<Story
+  name='hollow-Button'
+  args={{
+    children: 'Default',
+    variant: 'hollow',
+    disabled: false,
+    size: 'medium',
+    type: 'button',
+    ariaLabel: 'hollow button',
+  }}
+>
+  {Template.bind({})};
+</Story>
+
+<Story
+  name='Link-Button'
+  args={{
+    children: 'Default',
+    variant: 'link',
+    disabled: false,
+    size: 'medium',
+    type: 'button',
+    ariaLabel: 'link button',
+  }}
+>
+  {Template.bind({})};
+</Story>
+
+<Story
+  name='icon-Button'
+  args={{
+    children: 'Default',
+    variant: 'iconbutton',
+    disabled: false,
+    size: 'medium',
+    type: 'button',
+    icon: Icons.tick,
+    ariaLabel: 'icon-button',
+    isSpaceRequired: true,
+  }}
+>
+  {Template.bind({})};
+</Story>

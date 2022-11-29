@@ -1,0 +1,65 @@
+.filecardcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--xt_ui_kit_background_color, #c4c4c4);
+  border-radius: var(--xt_ui_kit_border_radius_10px, 10px);
+  padding: 5px 10px;
+}
+
+.filedetails {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filename {
+  font-weight: var(--xt_ui_kit_regular, 400);
+  font-size: var(--xt_ui_kit_extrasmall_font, 10px);
+  line-height: 19px;
+  color: var(--xt_ui_kit_secondary_color, #333333);
+}
+
+.filesize {
+  font-weight: var(--xt_ui_kit_regular, 400);
+  font-size: var(--xt_ui_kit_extrasmall_font, 10px);
+  line-height: 16px;
+  color: var(--xt_ui_kit_grey_color, #b4b4b4);
+}
+
+.progressbarcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-size: var(--xt_ui_kit_extrasmall_font, 10px);
+  font-weight: var(--xt_ui_kit_regular, 400);
+}
+
+.progressbar {
+  width: 80%;
+  margin-top: 5px;
+  margin-right: 3px;
+}
+
+.filebuttoncontainer {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.retrybuttoncontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.retrylink {
+  height: 20px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #079fff;
+}

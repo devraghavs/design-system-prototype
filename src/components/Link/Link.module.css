@@ -1,0 +1,44 @@
+.Anchortag {
+  color: var(--xt_ui_kit_blue_color, #079fff);
+  font-size: var(--xt_ui_kit_medium_font, 16px);
+  font-weight: var(--xt_ui_kit_regular, 400);
+}
+.Anchortag:active {
+  color: var(--xt_ui_kit_blue_color, #079fff);
+  font-size: var(--xt_ui_kit_medium_font, 16px);
+  font-weight: var(--xt_ui_kit_regular, 400);
+}
+.Anchortag:focus {
+  color: var(--xt_ui_kit_blue_color, #079fff);
+  font-size: var(--xt_ui_kit_medium_font, 16px);
+  font-weight: var(--xt_ui_kit_regular, 400);
+}
+.Anchortag:focus-within {
+  color: var(--xt_ui_kit_blue_color, #079fff);
+  font-size: var(--xt_ui_kit_medium_font, 16px);
+  font-weight: var(--xt_ui_kit_regular, 400);
+}
+.Anchortag:target {
+  color: var(--xt_ui_kit_blue_color, #079fff);
+  font-size: var(--xt_ui_kit_medium_font, 16px);
+  font-weight: var(--xt_ui_kit_regular, 400);
+}
+.Anchortag:hover {
+  color: var(--xt_ui_kit_blue_color, #079fff);
+  font-size: var(--xt_ui_kit_medium_font, 16px);
+  font-weight: var(--xt_ui_kit_regular, 400);
+}
+.Anchortag:visited {
+  color: var(--xt_ui_kit_blue_color, #079fff);
+  font-size: var(--xt_ui_kit_medium_font, 16px);
+  font-weight: var(--xt_ui_kit_regular, 400);
+}
+.Anchortag:focus-visible {
+  color: var(--xt_ui_kit_blue_color, #079fff);
+  font-size: var(--xt_ui_kit_medium_font, 16px);
+  font-weight: var(--xt_ui_kit_regular, 400);
+}
+.Anchortagdisable {
+  cursor: not-allowed;
+  opacity: 30%;
+}

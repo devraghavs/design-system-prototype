@@ -1,0 +1,19 @@
+import { Meta, Story } from '@storybook/addon-docs';
+
+import CheckboxMain from './Checkbox';
+
+<Meta title='XT-UI-Kit-Components/Checkbox' component={CheckboxMain} />
+
+export const Template = (args) => <CheckboxMain {...args} />;
+
+<Story
+  name='Checkbox'
+  args={{
+    label: 'Label',
+    disabled: false,
+    Checked: false,
+    Indeterminate: false,
+  }}
+>
+  {Template.bind({})};
+</Story>

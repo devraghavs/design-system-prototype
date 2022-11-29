@@ -1,0 +1,23 @@
+import { Meta, Story } from '@storybook/addon-docs';
+
+import Link from './Link';
+
+<Meta title='XT-UI-Kit-Components/Link' component={Link} />
+
+export const Template = (args) => <Link {...args} />;
+
+<Story
+  name='Link'
+  args={{
+    href: 'http://localhost:6006/?path=/story/introduction--page',
+    children: 'ClickMe',
+    title: 'ClickMe',
+    target: 'ClickMe',
+    type: 'html',
+    rel: 'ClickMeButton',
+    hrefLang: 'en',
+    disable: false,
+  }}
+>
+  {Template.bind({})};
+</Story>

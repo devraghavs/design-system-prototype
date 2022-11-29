@@ -1,0 +1,31 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Tooltip from './Tooltip';
+import Iconography from '../Iconography';
+import { Icons } from '../Iconography/iconsEnum';
+import styles from './Tooltip.module.css';
+
+<Meta title='XT-UI-Kit-Components/Tooltip' component={Tooltip} />
+
+export const Template = (args) => <Tooltip {...args} />;
+
+<Story
+  name='Tooltip'
+  args={{
+    text: 'Message goes here. Message goes here.',
+    ariaLabel:'Info',
+    trigger: <Iconography className={styles.icon} icon={Icons.addplus} />,
+  }}
+>
+  {Template.bind({})};
+</Story>
+
+<Story
+  name='Tooltip-with-click'
+  args={{
+    text: 'Message goes here. Message goes here.',
+    clickAble: true,
+    trigger: 'Click me',
+  }}
+>
+  {Template.bind({})};
+</Story>

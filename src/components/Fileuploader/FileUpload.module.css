@@ -1,0 +1,71 @@
+.inputdefault {
+  display: none;
+}
+
+.downloadbtn {
+  padding-right: 0px;
+}
+
+.downloadiconbtn {
+  margin-left: 25px;
+  height: 23.33px;
+  width: 23.33px;
+}
+
+.filedetails {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid var(--xt_ui_kit_disabled_color, #eeeeee);
+  border-radius: var(--xt_ui_kit_border_radius_5px, 5px);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.filename {
+  font-size: var(--xt_ui_kit_input_field_label, 12px);
+  line-height: 19px;
+  font-weight: var(--xt_ui_kit_regular, 400);
+  color: var(--xt_ui_kit_secondary_color, #333333);
+}
+
+.filesize {
+  font-weight: var(--xt_ui_kit_regular, 400);
+  font-size: var(--xt_ui_kit_extrasmall_font, 10px);
+  line-height: 16px;
+  color: var(--xt_ui_kit_grey_color, #b4b4b4);
+}
+
+.fileattachment {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  color: var(--xt_ui_kit_blue_color, #079fff);
+  display: inline;
+}
+
+.attachmenticon {
+  height: 11px;
+  width: 11px;
+  margin-right: 2.5px;
+}
+
+.maxsizeshow {
+  margin-left: 2.5px;
+  font-weight: var(--xt_ui_kit_light, 300);
+  font-size: var(--xt_ui_kit_extrasmall_font, 10px);
+  line-height: 16px;
+  color: var(----xt_ui_kit_black_color, #000000);
+}
+
+.errorclass {
+  font-weight: var(--xt_ui_kit_medium, 500);
+  font-size: var(--xt_ui_kit_input_field_label, 12px);
+  line-height: 19px;
+  color: var(--xt_ui_kit_primary_color, #fe414d);
+}

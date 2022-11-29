@@ -1,0 +1,25 @@
+.checkboxstyle {
+  height: 16px;
+  width: 16px;
+  border: 1px solid var(--xt_ui_kit_grey_color, #b4b4b4);
+  accent-color: var(--xt_ui_kit_primary_color, #fe414d);
+  cursor: pointer;
+}
+
+.checkboxstyle:indeterminate {
+  accent-color: var(--xt_ui_kit_primary_color, #fe414d);
+}
+.checkboxlabel {
+  font-size: var(--xt_ui_kit_medium_font, 16px);
+  font-weight: var(--xt_ui_kit_regular, 400);
+  color: var(--xt_ui_kit_secondary_color, #333333);
+  line-height: 25px;
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+.checkboxstyle:disabled {
+  cursor: not-allowed;
+  opacity: 30%;
+}

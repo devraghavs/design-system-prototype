@@ -1,0 +1,14 @@
+.button.classNamenextandprevious {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: 2px solid var(--xt_ui_kit_primary_color, #fe414d);
+  background-color: var(--xt_ui_kit_primary_color, #fe414d);
+  cursor: pointer;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+.button.classNamenextandprevious:disabled {
+  cursor: not-allowed;
+}

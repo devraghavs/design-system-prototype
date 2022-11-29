@@ -1,0 +1,281 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Table from './Table.tsx';
+import Input from '../Input';
+import Button from '../Buttons/Button';
+import styles from '../Global.module.css';
+import Iconography from '../Iconography';
+import { Icons } from '../Iconography/iconsEnum';
+import Tooltip from '../Tooltip';
+import Chips from '../Chips';
+
+<Meta title='XT-UI-Kit-Components/Table' component={Table} />
+
+export const Template = (args) => <Table {...args} />;
+
+<Story
+  name='Table'
+  args={{
+    globalFilterProps: true,
+    placeHolder: 'Numbers...',
+    pagiantionPages: [10, 20, 30],
+    isPaginationRequired: true,
+    headerData: [
+      {
+        key: 'Name',
+        headerLabel: 'First Name',
+        columnSorting: true,
+        columnFilter: true,
+      },
+      {
+        key: 'LastName',
+        headerLabel: 'Last Name',
+        columnSorting: true,
+        columnFilter: true,
+      },
+      {
+        key: 'FullName',
+        headerLabel: 'Full Name',
+        body: (row, index) => {
+          return (
+            <Tooltip
+              triggerStyle={styles.tooltip}
+              tooltipId={index}
+              text={`${row.Name} ${row.LastName}`}
+              trigger={`${row.Name} ${row.LastName}`}
+            />
+          );
+        },
+        columnSorting: false,
+        columnFilter: false,
+      },
+      { key: 'Age', headerLabel: 'Age', columnSorting: true, columnFilter: false },
+      { key: 'Visits', headerLabel: 'Visits', columnSorting: true, columnFilter: false },
+      { key: 'Status', headerLabel: 'Status', columnSorting: true, columnFilter: true },
+      {
+        key: 'Actions',
+        headerLabel: '',
+        columnSorting: false,
+        columnFilter: false,
+        body: (row) => (
+          <div className={styles.externalCss}>
+            <Chips className={styles.chip} chipVariant='success' isRemoveable={false} />
+          </div>
+        ),
+      },
+      {
+        key: 'Icons',
+        headerLabel: '',
+        columnSorting: false,
+        columnFilter: false,
+        body: (row) => (
+          <div className={styles.externalCss}>
+            <Button
+              ariaLabel='download button'
+              size={'extrasmall'}
+              icon={'download'}
+              variant={'iconbutton'}
+              onClick={() => console.log('download button clicked')}
+              iconSize='20'
+            ></Button>
+            <Button
+              ariaLabel='play button'
+              size={'extrasmall'}
+              icon={'play'}
+              variant={'iconbutton'}
+              onClick={() => console.log('play button clicked')}
+              iconSize='20'
+            ></Button>
+            <Button
+              ariaLabel='history button'
+              size={'extrasmall'}
+              icon={'history'}
+              variant={'iconbutton'}
+              onClick={() => console.log('history button clicked')}
+              iconSize='20'
+            ></Button>
+            <Button
+              ariaLabel='more button'
+              size={'extrasmall'}
+              icon={'more'}
+              variant={'iconbutton'}
+              onClick={() => console.log('download more clicked')}
+              iconSize='20'
+            ></Button>
+          </div>
+        ),
+      },
+    ],
+    tableData: [
+      {
+        Name: 'Pelluri',
+        LastName: 'Navya',
+        Age: 2,
+        Visits: 100,
+        Status: 'not available ',
+      },
+      {
+        Name: 'Rahul',
+        LastName: 'Yadav',
+        Age: 3,
+        Visits: 40,
+        Status: 'Single',
+      },
+      {
+        Name: 'Raghav',
+        LastName: 'Somani',
+        Age: 5,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'Soumya',
+        LastName: 'Priyadarshi',
+        Age: 8,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'Ramya',
+        LastName: 'krishna',
+        Age: 7,
+        Visits: 100,
+        Status: 'In Relationship to know me ',
+      },
+      {
+        Name: 'Rahul',
+        LastName: 'laman',
+        Age: 9,
+        Visits: 40,
+        Status: 'Single',
+      },
+      {
+        Name: 'rajani',
+        LastName: 'Somani',
+        Age: 88,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'dineshni',
+        LastName: 'Priyadarshi',
+        Age: 55,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'Pel',
+        LastName: 'paul',
+        Age: 72,
+        Visits: 100,
+        Status: 'In Relationship to know me ',
+      },
+      {
+        Name: 'naman',
+        LastName: 'Yadav',
+        Age: 60,
+        Visits: 40,
+        Status: 'Single',
+      },
+      {
+        Name: 'rajeev',
+        LastName: 'Somani',
+        Age: 52,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'ramkishna',
+        LastName: 'Priyadarshi',
+        Age: 33,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'ashis',
+        LastName: 'Nav',
+        Age: 24,
+        Visits: 100,
+        Status: 'In Relationship to know me ',
+      },
+      {
+        Name: 'dinesh',
+        LastName: 'Yadav',
+        Age: 70,
+        Visits: 40,
+        Status: 'Single',
+      },
+      {
+        Name: 'raj',
+        LastName: 'Somani',
+        Age: 23,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'chandan',
+        LastName: 'Priya',
+        Age: 45,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'daniyal',
+        LastName: 'krish',
+        Age: 26,
+        Visits: 100,
+        Status: 'In Relationship to know me ',
+      },
+      {
+        Name: 'vaish',
+        LastName: 'Yadav',
+        Age: 40,
+        Visits: 40,
+        Status: 'Single',
+      },
+      {
+        Name: 'yadav',
+        LastName: 'Somani',
+        Age: 45,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'ganga',
+        LastName: 'Priyadarshi',
+        Age: 45,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'noil',
+        LastName: 'Na',
+        Age: 22,
+        Visits: 100,
+        Status: 'In Relationship to know me ',
+      },
+      {
+        Name: 'key',
+        LastName: 'Yadav',
+        Age: 40,
+        Visits: 40,
+        Status: 'Single',
+      },
+      {
+        Name: 'imanual',
+        LastName: 'Somanini',
+        Age: 45,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+      {
+        Name: 'laksh',
+        LastName: 'Priya',
+        Age: 45,
+        Visits: 20,
+        Status: 'Complicated',
+      },
+    ],
+  }}
+>
+  {Template.bind({})}
+</Story>

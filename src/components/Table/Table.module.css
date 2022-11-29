@@ -1,0 +1,183 @@
+.table_Container {
+  width: 100%;
+}
+
+.table_th {
+  min-width: 110px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--xt_ui_kit_white_color, #ffffff);
+  background-color: var(--xt_ui_kit_primary_color, #fe414d);
+  height: auto;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.headersContainer button {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  color: var(--xt_ui_kit_white_color, #ffffff);
+  cursor: pointer;
+  text-align: center;
+}
+
+.table_th .columnfilter {
+  position: absolute;
+  top: -35px;
+  left: 0px;
+  background-color: var(--xt_ui_kit_white_color, #ffffff);
+  border: 1px solid rgb(231, 229, 229);
+  box-shadow: var(--xt_ui_kit_box_shadow, 0px 2px 5px rgba(0, 0, 0, 0.1));
+  border-radius: var(--xt_ui_kit_border_radius_5px, 5px);
+}
+
+.filterWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.table_head {
+  width: 100%;
+}
+
+.table_th .searchbar {
+  padding: 3px 8px;
+  border: none;
+}
+
+.parent_container .globalFilter {
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: var(--xt_ui_kit_border_radius_5px, 5px);
+  box-shadow: var(--xt_ui_kit_box_shadow, 0px 2px 5px rgba(0, 0, 0, 0.1));
+}
+
+.table_body tr:nth-child(even) {
+  background-color: var(--xt_ui_kit_bluishwhite_color, #f5faff);
+}
+
+.table_data {
+  min-width: 100px;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.parent_container table {
+  border-collapse: collapse;
+}
+
+.Pagination_Button_select {
+  display: flex;
+}
+
+.Pagination_Button_select .Pagination_Button {
+  background-color: var(--xt_ui_kit_primary_color, #fe414d);
+  color: var(--xt_ui_kit_white_color, #ffffff);
+  border: none;
+  margin: 2px;
+  padding: 0px 5px;
+  border-radius: var(--xt_ui_kit_border_radius_5px, 5px);
+  display: inline;
+}
+
+.Pagination_Buttonvalue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--xt_ui_kit_values);
+}
+
+.Select_Page_Size {
+  height: 30px;
+  margin: 2px 5px;
+}
+
+.pagenumber::after {
+  content: '|';
+  padding: 10px;
+}
+
+.pageoutof {
+  padding: 0px 5px;
+}
+
+.gotopage {
+  display: flex;
+}
+
+.PaginationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.PaginationContainer .page_number_container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.page_number_container .inputgotopage {
+  width: 80px;
+  height: 28px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.headerText {
+  text-align: left;
+  font-size: 14px;
+}
+
+.NoData {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  color: var(--xt_ui_kit_primary_color, #fe414d);
+  align-items: center;
+}
+
+.table_th .SortingIcon {
+  width: 20px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: var(--xt_ui_kit_medium 500);
+}
+
+.table_th .headersButton {
+  text-align: left;
+  padding: 0px;
+}
+.table_th .filtericon {
+  padding: 0px 0px 0px 0px;
+}
+
+.headersContainer {
+  display: flex;
+  position: relative;
+}
+.tooltip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 110px;
+}
+
+@media (min-width: 550px) {
+  .parent_container .globalFilter {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .PaginationContainer {
+    display: flex;
+    flex-direction: row;
+  }
+}

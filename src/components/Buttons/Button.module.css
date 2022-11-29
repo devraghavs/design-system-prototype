@@ -1,0 +1,77 @@
+.solid {
+  border-radius: var(--xt_ui_kit_border_radius_5px, 5px);
+  background-color: var(--xt_ui_kit_primary_color, #fe414d);
+  border: 1px solid var(--xt_ui_kit_primary_color, #fe414d);
+  color: var(--xt_ui_kit_white_color, #ffffff);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.hollow {
+  border-radius: var(--xt_ui_kit_border_radius_5px, 5px);
+  background-color: var(--xt_ui_kit_white_color, #ffffff);
+  border: 1px solid var(--xt_ui_kit_primary_color, #fe414d);
+  color: var(--xt_ui_kit_primary_color, #fe414d);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  border-radius: var(--xt_ui_kit_border_radius_5px, 5px);
+  background-color: transparent;
+  border: none;
+  color: var(--xt_ui_kit_primary_color, #fe414d);
+  text-decoration: underline;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.iconbutton {
+  border-radius: var(--xt_ui_kit_border_radius_5px, 5px);
+  background-color: transparent;
+  border: none;
+  color: var(--xt_ui_kit_primary_color, #fe414d);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.extrasmall {
+  height: 10px;
+  width: auto;
+  font-size: var(--xt_ui_kit_extrasmall_font, 10px);
+  padding: var(--xt_ui_kit_padding_extrasmall_button, 0px 8px);
+}
+
+.small {
+  height: 20px;
+  width: auto;
+  font-size: var(--xt_ui_kit_small_font, 12px);
+  padding: var(--xt_ui_kit_padding_small_button, 0px 12px);
+}
+
+.medium {
+  height: 30px;
+  width: auto;
+  font-size: var(--xt_ui_kit_medium_font, 16px);
+  padding: var(--xt_ui_kit_medium_button, 0px 16px);
+}
+
+.large {
+  height: 40px;
+  width: auto;
+  font-size: var(--xt_ui_kit_large_font, 18px);
+  padding: var(--xt_ui_kit_large_button, 0px 18px);
+}
+
+button:disabled {
+  opacity: 30%;
+  cursor: not-allowed;
+}
+
+.btnicon {
+  margin-right: 5px;
+}

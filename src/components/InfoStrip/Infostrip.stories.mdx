@@ -1,0 +1,22 @@
+import { Meta, Story } from '@storybook/addon-docs';
+
+import InfoStrip from './Infostrip';
+
+<Meta title='XT-UI-Kit-Components/InfoStrip' component={InfoStrip} />
+
+export const Template = (args) => <InfoStrip {...args} />;
+
+<Story
+  name='InfoStrip'
+  args={{
+    infostripcontent: (
+      <div>
+        Based on the current capability score of 65%, Hire Buddy recommends that{' '}
+        <b>Sourabh has cleared</b> this round. But based on the context of your discussion, please
+        feel free to change this decision.
+      </div>
+    ),
+  }}
+>
+  {Template.bind({})};
+</Story>

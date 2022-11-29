@@ -1,0 +1,43 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Select from './Select';
+
+<Meta title='XT-UI-Kit-Components/Select' component={Select} />
+
+export const Template = (args) => <Select {...args} />;
+
+<Story
+  name='Single Select'
+  args={{
+    multiple: false,
+    labelText: 'Single Select',
+    optional: false,
+    selectProp: 'Select Option ',
+    data: [
+      { value: 1, label: 'Rahul Yadav', disabled: false },
+      { value: 2, label: 'Kenton Towne', disabled: false },
+      { value: 3, label: 'Therese Wunsch', disabled: false },
+      { value: 4, label: 'Benedict Kessler', disabled: true },
+    ],
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+<Story
+  name='Multiple Select'
+  args={{
+    multiple: true,
+    labelText: 'Multiple Select',
+    checkBoxColor: '#079fff',
+    optional: true,
+    selectProp: 'Select Option ',
+    data: [
+      { value: 1, label: 'Rahul Yadav', disabled: false },
+      { value: 2, label: 'Kenton Towne', disabled: false },
+      { value: 3, label: 'Therese Wunsch', disabled: false },
+      { value: 4, label: 'Benedict Kessler', disabled: true },
+    ],
+  }}
+>
+  {Template.bind({})}
+</Story>

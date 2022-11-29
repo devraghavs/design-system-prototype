@@ -1,0 +1,16 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Label from './Label';
+
+<Meta title='XT-UI-Kit-Components/Label' component={Label} />
+
+export const Template = (args) => <Label {...args} />;
+
+<Story
+  name='Label'
+  args={{
+    value: 'input label',
+    required: false,
+  }}
+>
+  {Template.bind({})}
+</Story>

@@ -1,0 +1,67 @@
+.btnCheck {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+.btn {
+  display: inline-flex;
+  cursor: pointer;
+  width: 50%;
+  min-width: 130px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 4px 16px;
+  margin: 5px;
+  border-radius: var(--xt_ui_kit_border_radius_5px, 5px);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.mainDiv{
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.outline-success {
+  color: var(--xt_ui_kit_positive_color, #6fcf97);
+  border-color: var(--xt_ui_kit_positive_color, #6fcf97);
+}
+.outline-danger {
+  color: var(--xt_ui_kit_danger_color, #eb5757);
+  border-color: var(--xt_ui_kit_danger_color, #eb5757);
+}
+input[type='radio']:checked + .outline-success {
+  color: var(--xt_ui_kit_white_color, #ffffff);
+  background-color: var(--xt_ui_kit_positive_color, #6fcf97);
+  border-color: var(--xt_ui_kit_positive_color, #6fcf97);
+}
+input[type='radio']:checked + .outline-danger {
+  color: var(--xt_ui_kit_white_color, #ffffff);
+  background-color: var(--xt_ui_kit_danger_color, #eb5757);
+  border-color: var(--xt_ui_kit_danger_color, #eb5757);
+}
+
+.icon {
+  border-radius: 15px;
+  padding: 6px;
+  margin-right: 8px;
+}
+.icon.icon-positive-outline {
+  border: 1px solid var(--xt_ui_kit_positive_color, #6fcf97);
+}
+.icon.icon-negative-outline {
+  border: 1px solid var(--xt_ui_kit_danger_color, #eb5757);
+}
+
+.icon.icon-solid-positive {
+  background-color: var(--xt_ui_kit_success_color, #3ba667);
+}
+
+.icon.icon-solid-negative {
+  background-color: var(--xt_ui_kit_negative_color, #ac2d2d);
+}
+
+.btnDisable {
+  opacity: 0.3;
+  cursor: not-allowed;
+}

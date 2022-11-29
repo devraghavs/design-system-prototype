@@ -1,0 +1,17 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import DecisionRadio from './DecisionRadio';
+
+<Meta title='XT-UI-Kit-Components/DecisionRadio' component={DecisionRadio} />
+
+export const Template = (args) => <DecisionRadio {...args} />;
+
+<Story
+  name='DecisionRadio'
+  args={{
+    positiveText: 'Postive',
+    negativeText: 'Negative',
+    disablePositive:true,
+  }}
+>
+  {Template.bind({})}z
+</Story>

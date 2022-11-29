@@ -1,0 +1,133 @@
+import { Meta, Source } from '@storybook/addon-docs';
+
+<Meta title='Introduction' />
+
+<style>
+  {`
+  .underline{
+    text-decoration:underline;
+    color:'black';
+  }
+  .tipgreen{
+    color:#00e6c3;
+  }
+    .subheading {
+      --mediumdark: '#999999';
+      font-weight: 900;
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+    .tip {
+      display: inline-block;
+      border-radius: 1em;
+      font-size: 11px;
+      line-height: 12px;
+      font-weight: 700;
+      background: #E7FDD8;
+      color: #66BF3C;
+      padding: 4px 12px;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+  `}
+</style>
+
+# Welcome to XT-UI-Kit-Components
+
+XT-UI-Kit-Components helps you build UI components in isolation from your app's business logic, data, and context.
+The below file theme file includes the global styling variables.
+
+To manipulate or make changes at global level, developer can add one css file at index level with strict use of variable names as mentioned
+
+<div className='subheading'>Theme file</div>
+<span className='tip'>Css Variable</span>
+<code>css_variables.css</code>
+
+<Source
+  format={true}
+  code={`
+    /**Variables for theme pallete */
+    
+    --xt_ui_kit_primary_color: #fe414d;
+    --xt_ui_kit_secondary_color: #333333;
+    --xt_ui_kit_danger_color: #eb5757;
+    
+    /**Color not are in use for theme pallete */
+    --xt_ui_kit_success_color: #3ba667;
+    --xt_ui_kit_positive_color: #6fcf97; 
+    --xt_ui_kit_lightgray_color: #a9a9a9;
+    --xt_ui_kit_darkyellow_color: #ffe63b;
+    --xt_ui_kit_warning_color: #ff9b53;
+    --xt_ui_kit_green_color: #00e6c3;
+    --xt_ui_kit_mixyellow_color: #f7d494;
+    --xt_ui_kit_lightvoilet_color: #f6f2fd;
+    --xt_ui_kit_lightred_color: #fcb7b7;
+    --xt_ui_kit_lightgreen_color: #c9ecdd;
+    --xt_ui_kit_orange_color: #e88228;
+    --xt_ui_kit_transparent_color: #f2f2f2;
+    
+    /**Normal color pallete*/
+    --xt_ui_kit_blue_color: #079fff;
+    --xt_ui_kit_white_color: #ffffff;
+    --xt_ui_kit_black_color: #000000;
+    --xt_ui_kit_lightyellow_color: #f6f8b5;
+    --xt_ui_kit_yellow_color: #fbec93;
+    --xt_ui_kit_grey_color: #b4b4b4;
+    --xt_ui_kit_bluishwhite_color: #f5faff;
+    --xt_ui_kit_voilet_color: #a290c9;
+    --xt_ui_kit_darkgreen_color: #219653;
+    --xt_ui_kit_brown_color: #8b7113;
+    /**background colors*/
+    --xt_ui_kit_disabled_color: #eeeeee;
+    --xt_ui_kit_background_color: #c4c4c4;
+    --xt_ui_kit_darkgray_color: #849cb5;
+    /**Application font weight*/
+    --xt_ui_kit_light: 300;
+    --xt_ui_kit_regular: 400;
+    --xt_ui_kit_medium: 500;
+    
+    /**Not in use font weight*/
+    --xt_ui_kit_bold: 700;
+    --xt_ui_kit_semi_bold: 600;
+    /**Application font size*/
+    --xt_ui_kit_values: 14px;
+    --xt_ui_kit_input_field_label: 12px;
+    /**Not used Application font size*/
+    --xt_ui_kit_modal_headings: 20px;
+    --xt_ui_kit_major_headings: 36px;
+    --xt_ui_kit_sub_headings: 22px;
+    --xt_ui_kit_modal_descriptions: 18px;
+    --xt_ui_kit_information_strips: 16px;
+    
+    /** font sizes and padding */
+    --xt_ui_kit_extrasmall_font: 10px;
+    --xt_ui_kit_small_font: 12px;
+    --xt_ui_kit_medium_font: 16px;
+    --xt_ui_kit_large_font: 18px;
+    --xt_ui_kit_padding_extrasmall_button: 0px 8px;
+    --xt_ui_kit_padding_small_button: 0px 12px;
+    --xt_ui_kit_medium_button: 0px 16px;
+    --xt_ui_kit_large_button: 0px 18px;
+  `}
+/>
+
+To Manipulate one color , check the variable name
+
+<b>Example:-</b>
+
+To change the primary color of theme create a variable css and add it into the <b>'App.css'</b> and use the variable
+
+<div className='underline'>Before</div>
+
+--xt_ui_kit_primary_color: #fe414d
+
+<div className='underline'>After</div>
+
+--xt_ui_kit_primary_color: #ffffff
+
+<span className='tipgreen'>color sucessfully changed </span>

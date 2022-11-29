@@ -1,0 +1,18 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Upload from './FileUpload';
+
+<Meta title='XT-UI-Kit-Components/FileUpload' component={Upload} />
+
+export const Template = (args) => <Upload {...args} />;
+
+<Story
+  name='FileUpload'
+  args={{
+    maxSize: '1000',
+    fileType:
+      'application/pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+    error: 'Error',
+  }}
+>
+  {Template.bind({})}
+</Story>

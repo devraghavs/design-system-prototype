@@ -1,0 +1,19 @@
+import { Meta, Story } from '@storybook/addon-docs';
+import Textarea from './Textarea';
+
+<Meta title='XT-UI-Kit-Components/Textarea' component={Textarea} />
+
+export const Template = (args) => <Textarea {...args} />;
+
+<Story
+  name='Textarea'
+  args={{
+    label: 'textarea',
+    required: false,
+    disable: false,
+    placeholder: 'placeholder',
+    resizable: false,
+  }}
+>
+  {Template.bind({})}
+</Story>
